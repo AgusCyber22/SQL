@@ -1,27 +1,28 @@
 
 <h1> SQL - Security Operation</h1>
 
- ### [YouTube Demonstration](https://youtu.be/7eJexJVCqJo)
 
 <h2>Description</h2>
-Project consists of a simple PowerShell script that walks the user through "zeroing out" (wiping) any drives that are connected to the system. The utility allows you to select the target disk and choose the number of passes that are performed. The PowerShell script will configure a diskpart script file based on the user's selections and then launch Diskpart to perform the disk sanitization.
-<br />
-
+Project consists of applying filter on SQL quaries to find malicious activity that might be potential security issues for company. 
 
 <h2>Languages and Utilities Used</h2>
 
-- <b>PowerShell</b> 
-- <b>Diskpart</b>
+- <b>SQL</b> 
 
 <h2>Environments Used </h2>
 
-- <b>Windows 10</b> (21H2)
+- <b>Linux</b> (VM)
 
-<h2>Program walk-through:</h2>
+<h2>Project walk-through:</h2>
 
 <p align="center">
-Launch the utility: <br/>
-<img src="https://i.imgur.com/62TgaWL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Retrieve after-hours failed login attempts: <br/>
+<br /> 
+<img src="https://i.imgur.com/tUpqVEY.png" height="80%" width="80%" alt="Retrieve after-hours failed login attempts"/>
+<br /> 
+<br />
+Use SELECT * FROM log_in_attempts for query data in every column on the login attempts table. Then, use WHERE login_time > ‘18:00’ for search login attempts that happen after 18.00 which is hours after working office time. Success = 0 which means failed login.
+<br />
 <br />
 <br />
 Select the disk:  <br/>
