@@ -3,8 +3,7 @@
 
 
 <h2>Description</h2>
-Project consists of applying filter on SQL quaries to find malicious activity that might be potential security issues for company. 
-
+Project consists of applying filter on SQL quaries to find malicious activity that might be potential security issues for company.
 <h2>Languages and Utilities Used</h2>
 
 - <b>SQL</b> 
