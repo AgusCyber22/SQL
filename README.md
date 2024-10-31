@@ -46,16 +46,18 @@ In this case, use SELECT * FROM employees to retrieve all columns (*) on the emp
 <br />
 Retrieve employee list from multiple department:  <br/>
 <br />
-<img src="https://i.imgur.com/JL945Ga.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/pCuLips.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> <br />
 <br />
+In this case, use SELECT * FROM employees to retrieve all columns in the employee's table. Then, use WHERE department = ‘Sales’ OR department = ‘Finance’ ; to show only Sales or Finance employees in the organization. <br /> 
 <br />
-Sanitization complete:  <br/>
-<img src="https://i.imgur.com/K71yaM2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Retrieve employee list exclude particular department:  <br/>
 <br />
+<img src="https://i.imgur.com/CmLvzr8.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> <br />
 <br />
-Observe the wiped disk:  <br/>
-<img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
+Use SELECT * FROM employees to show all columns on the employees table and use WHERE NOT department = ‘Information Technology’ ; to see all employees except for the IT department.<br />
+<br/>
+Summary : Here we can see how useful SQL query filtering for information gathering, indentifying and decision making in security issues. 
+
 
 <!--
  ```diff
